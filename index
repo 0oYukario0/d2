@@ -1,0 +1,26 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+    <title>显示另一个网址</title>  
+    <style>  
+        #container {  
+            width: 500px;  
+            height: 300px;  
+            border: 1px solid black;  
+        }  
+    </style>  
+</head>  
+<body>  
+    <div id="container"></div>  
+  
+    <script>  
+        document.addEventListener("DOMContentLoaded", function() {  
+            const container = document.getElementById("container");  
+            const iframe = document.createElement("iframe");  
+            iframe.src = "https://nas.free.nf";  
+            iframe.frameBorder = "0"; // 可选，为了去掉iframe的边框  
+            container.appendChild(iframe);  
+        });  
+    </script>  
+</body>  
+</html>
